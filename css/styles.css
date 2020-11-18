@@ -1,0 +1,427 @@
+/* CSS file for ITMD-361 Project 2 – add CSS to the 3-page website. */
+
+* { /* for all elements */
+  box-sizing: border-box; /*padding and border are included in the width and height */
+}
+
+body { /* Page body */
+  background-color: seashell;
+  margin-left: 1.25em; /* 1em = 16px */
+  padding-left: 0.625em;
+  padding-right: 1.25em;
+}
+
+.footer { /* Page footer */
+  font-family: Arial, Helvetica, sans-serif; /* Native font */
+  height: 3.125em;
+  font-size: 1em;
+  background-color: lightgrey;
+  clear: both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 { /* Heading 1 */
+  color: blue;
+  font-family: 'Atma', cursive;
+  font-weight: 400;
+  font-size: 300%;
+  text-align: center;
+  text-shadow: 2px 2px 5px red;
+}
+
+h2, h3, h4 { /* Heading 2 - 4 Setting */
+  font-family: 'Oldenburg', cursive;
+  font-weight: 900;
+  padding-left: 0.625em;
+  padding-top: 1.875em;
+}
+
+.h2center { /* Heading 2 specific setting */
+  text-align: center;
+  font-size: 170%;
+  padding-top: 1.5em;
+}
+
+h3 { /* Heading 3 */
+  font-size: 140%;
+}
+
+h4 { /* Heading 4 */
+  font-size: 120%;
+}
+
+p { /* Paragraph Setting */
+  font-family: 'Arima Madurai', cursive;
+  font-size: 1.25em;
+  padding-left: 0.625em;
+  padding-right: 1.25em;
+  text-align: justify;
+}
+
+.jobtitle { /* Size for Job Title */
+  font-size: 125%;
+}
+
+.center { /* Center Text */
+  text-align: center;
+  padding-left: 0px;
+  padding-top: 0px;
+}
+
+.left { /* Left aligned text */
+  text-align: left;
+  padding-top: 0px;
+}
+
+.webpage-layout { /* Page layout for every web page */
+  max-width: 960px;
+  margin: 0 auto;
+  box-shadow: 4px 8px 10px 8px grey;
+  background-color: rgba(191, 191, 63, 0.3); /* light green */
+  border-radius: 0.9375em;
+}
+
+.header { /* Header at the top of every web page */
+  font-family: 'Atma', cursive;
+  background-color: lightgrey;
+  text-align: center;
+  padding: 0.3125em 0;
+}
+
+/* Navigation Link Setting below */
+.nav-links {
+  font-size: 175%;
+  background-color: olive;
+  float: left;
+  width: 100%;
+}
+
+.nav-links ul {
+  list-style-type: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  float: left;
+  left: 50%;
+}
+
+.nav-links ul li {
+  position: relative;
+  float: left;
+  right: 50%;
+  text-align: center;
+  width: 33%; /* Avoid stacking on smaller pages */
+}
+
+.nav-links ul li a {
+  color: firebrick;
+  padding: 10px 25px;
+  display: block;
+  text-decoration: none;
+}
+
+.nav-links ul li a:hover {
+  color: olive;
+  background-color: firebrick;
+}
+
+/* Link on the page body */
+a.body-link:link {
+  color:red;
+}
+
+a.body-link:visited {
+  color:blue;
+}
+
+a.body-link:hover {
+  font-size:110%;
+}
+
+/* Link for image caption */
+a.img-link:link {
+  color:white;
+}
+
+a.img-link:visited {
+  color:red;
+}
+
+a.img-link:hover {
+  background:lightgreen;
+}
+
+/* Image box */
+figure {
+  border: thick black solid;
+  padding: 0;
+  margin: auto;
+  display: table;
+  background-color: black;
+  border-top: none;
+  padding-top: 0;
+  border-radius: 0 0 0.9375em 0.9375em;
+}
+
+/* Image Caption */
+figcaption {
+  font-family: 'Arima Madurai', cursive;
+  background-color: black;
+  color: white;
+  padding: 0.125em;
+  text-align: left;
+  display: table-caption;
+  caption-side: top;
+  max-width: 560px;
+  border: thick black solid;
+  border-bottom: none;
+  border-radius: 0.9375em 0.9375em 0 0;
+}
+
+.img-column { /* 2 column images */
+  float: left;
+  width: 50%;
+  padding: 0.25em;
+}
+
+/* Clearfix (clear floats) for next row of images*/
+.img-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+img { /* Image Setting */
+  align-self: center;
+  width: 28.125em;
+  height: 18.75em;
+  max-width:28.125em;
+  max-height: 18.75em;
+}
+
+video{ /* Video Setting */
+  align-self: center;
+  width: 28.125em;
+  height: 21.25em;
+  max-width:28.125em;
+  max-height: 21.25em;
+}
+
+ul li { /* List Item Setting */
+  font-family: 'Arima Madurai', cursive;
+  font-size: 20px;
+  padding-left: 10px;
+  text-align: justify;
+  padding-right: 20px;
+}
+
+.li-padding { /* List item padding */
+  padding-bottom: 5px;
+}
+
+/* Align left, center, right on a Resume line */
+.alignleft {
+  float: left;
+  width:33.33%;
+  text-align:left;
+  padding-left: 0.625em;
+  padding-top: 2.5em;
+  font-family: 'Arima Madurai', cursive;
+  font-size: 1em;
+}
+
+.aligncenter {
+  float: left;
+  width:33.33%;
+  text-align:center;
+  padding-top: 0.5em;
+  font-family: 'Arima Madurai', cursive;
+  font-size: 300%;
+  font-weight: 900;
+}
+
+.alignright {
+  float: left;
+  width:33.33%;
+  text-align:right;
+  padding-top: 2.5em;
+  padding-right: 1.25em;
+  font-family: 'Arima Madurai', cursive;
+  font-size: 1em;
+}​
+
+/* pseduo-element to take care of clearing float element */
+.clearfix::after {
+  padding-left: 0px;
+  padding-top: 0px;
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* Take care of overflow outside of container */
+.clearfix {
+  content: "";
+  clear: both;
+  display: block;
+  text-align:center;
+  font-family: 'Arima Madurai', cursive;
+  font-size: 150%;
+  font-weight: 900;
+  padding-top: 0.625em;
+}
+
+#intro { /* Homepage Intro */
+  padding-top: 3.125em;
+  text-align: center;
+}
+
+#saigon { /* Saigon portion setting */
+  font-family: 'Arima Madurai', cursive;
+}
+
+#halong { /* Halong portion */
+  text-align: left;
+}
+
+#sapa { /* sapa portion */
+  font-family: 'Arima Madurai', cursive;
+  text-align: left;
+}
+
+#other { /* Other portion setting */
+  font-family: 'Arima Madurai', cursive;
+}
+
+#summary { /* Resume Summary */
+  font-family: 'Arima Madurai', cursive;
+}
+
+#key_skills { /* Resume Key Skills */
+  font-family: 'Arima Madurai', cursive;
+  text-align: left;
+}
+
+#experience { /* Resume Experience Section */
+  padding-top: 0px;
+  text-align: left;
+}
+
+#education { /* Resume Education Section */
+  text-align: left;
+}
+
+/* Responsive layout for medium size page -
+ * will change using min-width for project 3.
+ */
+@media (min-width: 541px) and (max-width: 1010px) {
+  .nav-links ul li {
+    position: relative;
+    float: left;
+    right: 50%;
+    text-align: center;
+    font-size: 80%;
+    padding: 0;
+  }
+  h1 {
+    font-size: 250%;
+  }
+  h2 {
+    font-size: 150%;
+  }
+  h3 { /* Heading 3 */
+    font-size: 130%;
+  }
+  h4 { /* Heading 4 */
+    font-size: 110%;
+  }
+  p {
+    font-family: 'Arima Madurai', cursive;
+    font-size: 1.1em;
+    padding-left: 0.625em;
+    padding-right: 1.25em;
+    text-align: justify;
+  }
+  ul li { /* List Item Setting */
+    font-family: 'Arima Madurai', cursive;
+    font-size: 1.1em;
+    padding-left: 10px;
+    text-align: justify;
+    padding-right: 20px;
+  }
+  .img-column { /* 2 column images */
+    float: none;
+    width: 40%;
+    /* padding: 0.25em; */
+    padding-left: 2em;
+    padding-bottom: 1em;
+  }
+  img { /* Image Setting */
+    align-self: center;
+    width: 25em;
+    height: 18em;
+    max-width:25em;
+    max-height: 18em;
+  }
+}
+
+/* Responsive layout for small size page -
+ * will change using min-width for project 3.
+ */
+@media screen and (max-width: 540px) {
+  .nav-links ul li {
+    position: relative;
+    float: left;
+    right: 50%;
+    text-align: center;
+    font-size: 70%;
+    padding: 0;
+  }
+  h1 {
+    font-size: 200%;
+  }
+  h2 {
+    font-size: 140%;
+  }
+  h3 { /* Heading 3 */
+    font-size: 120%;
+  }
+  h4 { /* Heading 4 */
+    font-size: 105%;
+  }
+  p {
+    font-family: 'Arima Madurai', cursive;
+    font-size: 1em;
+    padding-left: 0.625em;
+    padding-right: 1.25em;
+    text-align: justify;
+  }
+  ul li { /* List Item Setting */
+    font-family: 'Arima Madurai', cursive;
+    font-size: 0.9em;
+    padding-left: 10px;
+    text-align: justify;
+    padding-right: 20px;
+  }
+  .img-column { /* 2 column images */
+    float: none;
+    width: 40%;
+    padding: 0.5em;
+  }
+  img { /* Image Setting */
+    align-self: center;
+    width: 25em;
+    height: 18em;
+    max-width:25em;
+    max-height: 18em;
+  }
+  video{ /* Video Setting */
+    align-self: center;
+    width: 25em;
+    height: 20em;
+    max-width:25em;
+    max-height: 20em;
+  }
+}

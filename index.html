@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--
+    Author: Tri Le
+    ITMD-361 Project 2 – add CSS to the 3-page website that I built for project 1.
+    This HTML page is for my Homepage - index.html
+    UTF-8 encoding table: https://www.utf8-chartable.de/unicode-utf8-table.pl?number=1024&utf8=dec&unicodeinhtml=dec
+  -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITMD-361 Project 2 - Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&family=Atma:wght@500&family=Oldenburg&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+
+  <body>
+    <div class="webpage-layout">
+      <header class="header">
+        <!-- ' = 39 UTF-8 decimal
+             - = 45 UTF-8 decimal
+             / = 47 UTF-8 decimal
+        -->
+        <h1>Welcome to Tri Le&#39;s Project&#45;2 Homepage</h1>
+        <!-- Navigation links -->
+        <nav class="nav-links">
+          <ul>
+            <li><a href="index.html" title="Project 2 Homepage"><strong>Home</strong></a></li>
+            <li><a href="favorite_places.html" title="My Favorite Places"><strong>Favorite</strong></a></li>
+            <li><a href="resume.html" title="Tri Le Resume"><strong>Resume</strong></a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Introduction -->
+      <div id="intro">
+        <p>I am from <strong><a class="body-link" href="https://en.wikipedia.org/wiki/Vietnam">Vietnam</a></strong>, a wonderful
+          country with friendly people, diverse culture, beautiful nature, and amazing food.  Please enjoy
+          my website and copyright pictures&#47;videos throughout these pages.</p>
+      </div>
+      <!-- Ho Chi Minh City (Saigon) -->
+      <div id="saigon">
+        <p>If you come to Vietnam, most likely you will fly into
+          <strong><a class="body-link" href="https://en.wikipedia.org/wiki/Ho_Chi_Minh_City">Ho Chi Minh City</a></strong>.
+          It is the largest city situated in the South of Vietnam and is also known as
+          <strong><a class="body-link" href="https://www.tripsavvy.com/where-is-saigon-1458405">Saigon</a></strong>.
+          The streets are insanely clog of motorbikes but there&#39;s so much to love about this city,
+          including museums, world-class restaurants, luxury hotels, and best of all, street food stalls.</p>
+          <!-- Display 2 images in a row -->
+        <div class="img-row">
+          <div class="img-column">
+            <figure>
+              <img src="images/saigon/street_food3.jpg" alt="Street Food Scene with 2 girls eating soups">
+              <figcaption>First and foremost, you must try <strong><a class="img-link" href="https://www.youtube.com/watch?v=rI7fhQleAkQ">Street
+                Food.</a></strong> You can enjoy delicious, cheap, and authentic foods on the city&#39;s sidewalks and alleys.</figcaption>
+            </figure>
+          </div>
+          <div class="img-column">
+            <figure>
+              <img src="images/saigon/tropical_fruits1.jpg" alt="Local Fruit Stand with so many fruits">
+              <figcaption>You can find lots of <strong><a class="img-link" href="https://vietnam.travel/things-to-do/13-fantastic-fruits-vietnam">
+                tropical fruits</a></strong> at the local markets or fruit shops along the street. My favorites
+                are Mangosteen, Dragon Fruit Longan, and Rambutan.</figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- Display the next row of 2 images -->
+        <div class="img-row">
+          <div class="img-column">
+            <figure>
+              <img src="images/saigon/traffic1.jpg" alt="Horrendous Traffic and Motorbike Frenzy">
+              <figcaption>The <strong><a class="img-link" href="https://www.smartertravel.com/how-to-cross-the-street-in-saigon-traffic/#:~:text=Ho%20Chi%20Minh%20City%2C%20better,and%20about%208%20million%20motorbikes.&text=That's%20not%20to%20say%20you,the%20raging%20river%20of%20traffic.">
+                traffic of Saigon</a></strong> is an unforgettable experience, so just take a deep breath
+                before crossing the street.</figcaption>
+            </figure>
+          </div>
+          <div class="img-column">
+            <figure>
+              <img src="images/saigon/family5.jpg" alt="Family of 5 on a Scooter.">
+              <!-- ! = 33 UTF-8 decimal -->
+              <figcaption>Believe it or not, you could actually fit a family of 5 on a scooter&#33;</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <!-- On a different topic -->
+      <div id="other">
+        <p>You can get away from the hectic pace and traffic madness of Saigon and visit
+          my <a class="body-link" href="favorite_places.html"><strong>Favorite Places</strong></a> in the Northern Vietnam.</p>
+        <p>You can view my <a class="body-link" href="resume.html"><strong>Resume</strong></a> here or at the navigation bar
+          on top of this page.</p>
+        <div class="img-row">
+          <div class="img-column">
+            <figure>
+              <video src="images/rubik1.mp4" controls="controls">
+                Your browser does not support the video tag. Video contains a kid solving the rubik&#39;s cube with 1 hand.
+              </video>
+              <figcaption>Lastly, my kid loves to do Rubik&#39;s Cube competitions.  Here is a kid solving with just one
+                hand. So amazing&#33;</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <!-- Footer for email contact info -->
+      <footer class="footer">
+        Created by Tri Le -
+        <address>
+          <!-- @ = 64 UTF-8 decimal -->
+          <a href="mailto:tle28&#64;hawk.itt.edu?subject=feedback">tle28&#64;hawk.iit.edu</a>
+        </address>
+      </footer>
+    </div>
+  </body>
+</html>
