@@ -6,13 +6,14 @@
 
 body { /* Page body */
   background-color: seashell;
+  font-family: Arial, Helvetica, sans-serif; /* Native font */
   margin-left: 1.25em; /* 1em = 16px */
   padding-left: 0.625em;
   padding-right: 1.25em;
 }
 
 .footer { /* Page footer */
-  font-family: Arial, Helvetica, sans-serif; /* Native font */
+  font-family: Arial, Helvetica, sans-serif;
   height: 3.125em;
   font-size: 1em;
   background-color: lightgrey;
@@ -24,17 +25,15 @@ body { /* Page body */
 
 h1 { /* Heading 1 */
   color: blue;
-  font-family: 'Atma', cursive;
   font-weight: 400;
-  font-size: 300%;
+  font-size: 200%;
   text-align: center;
   text-shadow: 2px 2px 5px red;
 }
 
 h2, h3, h4 { /* Heading 2 - 4 Setting */
-  font-family: 'Oldenburg', cursive;
   font-weight: 900;
-  padding-left: 0.625em;
+  padding-left: 10px;
   padding-top: 1.875em;
 }
 
@@ -45,19 +44,19 @@ h2, h3, h4 { /* Heading 2 - 4 Setting */
 }
 
 h3 { /* Heading 3 */
-  font-size: 140%;
-}
-
-h4 { /* Heading 4 */
   font-size: 120%;
 }
 
+h4 { /* Heading 4 */
+  font-size: 105%;
+}
+
 p { /* Paragraph Setting */
-  font-family: 'Arima Madurai', cursive;
-  font-size: 1.25em;
+  font-family: Arial, Helvetica, sans-serif; /* Native font */
+  font-size: 1.05em;
   padding-left: 0.625em;
   padding-right: 1.25em;
-  text-align: justify;
+  text-align: left;
 }
 
 .jobtitle { /* Size for Job Title */
@@ -66,8 +65,10 @@ p { /* Paragraph Setting */
 
 .center { /* Center Text */
   text-align: center;
-  padding-left: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 0px;
+  font-size: 100%;
 }
 
 .left { /* Left aligned text */
@@ -92,10 +93,11 @@ p { /* Paragraph Setting */
 
 /* Navigation Link Setting below */
 .nav-links {
-  font-size: 175%;
+  font-size: 125%;
   background-color: olive;
   float: left;
   width: 100%;
+  text-align: center;
 }
 
 .nav-links ul {
@@ -113,6 +115,7 @@ p { /* Paragraph Setting */
   right: 50%;
   text-align: center;
   width: 33%; /* Avoid stacking on smaller pages */
+  font-size: 78%;
 }
 
 .nav-links ul li a {
@@ -167,23 +170,24 @@ figure {
 
 /* Image Caption */
 figcaption {
-  font-family: 'Arima Madurai', cursive;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: black;
   color: white;
   padding: 0.125em;
   text-align: left;
   display: table-caption;
   caption-side: top;
-  max-width: 560px;
+  max-width: 380px;
   border: thick black solid;
   border-bottom: none;
   border-radius: 0.9375em 0.9375em 0 0;
+  font-size: 1.05em;
 }
 
-.img-column { /* 2 column images */
-  float: left;
-  width: 50%;
-  padding: 0.25em;
+.img-column {
+  float: none;
+  width: 40%;
+  padding: 0.5em;
 }
 
 /* Clearfix (clear floats) for next row of images*/
@@ -195,25 +199,25 @@ figcaption {
 
 img { /* Image Setting */
   align-self: center;
-  width: 28.125em;
-  height: 18.75em;
-  max-width:28.125em;
-  max-height: 18.75em;
+  width: 18.75em;
+  height: 12.5em;
+  max-width: 18.755em;
+  max-height: 12.5em;
 }
 
-video{ /* Video Setting */
+video { /* Video Setting */
   align-self: center;
-  width: 28.125em;
-  height: 21.25em;
-  max-width:28.125em;
-  max-height: 21.25em;
+  width: 18.75em;
+  height: 14.17em;
+  max-width: 18.75em;
+  max-height: 14.17em;
 }
 
 ul li { /* List Item Setting */
-  font-family: 'Arima Madurai', cursive;
-  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95em;
   padding-left: 10px;
-  text-align: justify;
+  text-align: left;
   padding-right: 20px;
 }
 
@@ -227,9 +231,9 @@ ul li { /* List Item Setting */
   width:33.33%;
   text-align:left;
   padding-left: 0.625em;
-  padding-top: 2.5em;
-  font-family: 'Arima Madurai', cursive;
-  font-size: 1em;
+  padding-top: 1.4em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
 }
 
 .aligncenter {
@@ -237,19 +241,19 @@ ul li { /* List Item Setting */
   width:33.33%;
   text-align:center;
   padding-top: 0.5em;
-  font-family: 'Arima Madurai', cursive;
-  font-size: 300%;
-  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 180%;
+  font-weight: 600;
 }
 
 .alignright {
   float: left;
   width:33.33%;
   text-align:right;
-  padding-top: 2.5em;
-  padding-right: 1.25em;
-  font-family: 'Arima Madurai', cursive;
-  font-size: 1em;
+  padding-top: 1.4em;
+  padding-right: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
 }​
 
 /* pseduo-element to take care of clearing float element */
@@ -267,9 +271,9 @@ ul li { /* List Item Setting */
   clear: both;
   display: block;
   text-align:center;
-  font-family: 'Arima Madurai', cursive;
-  font-size: 150%;
-  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 120%;
+  font-weight: 600;
   padding-top: 0.625em;
 }
 
@@ -279,7 +283,7 @@ ul li { /* List Item Setting */
 }
 
 #saigon { /* Saigon portion setting */
-  font-family: 'Arima Madurai', cursive;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #halong { /* Halong portion */
@@ -287,21 +291,22 @@ ul li { /* List Item Setting */
 }
 
 #sapa { /* sapa portion */
-  font-family: 'Arima Madurai', cursive;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: left;
 }
 
 #other { /* Other portion setting */
-  font-family: 'Arima Madurai', cursive;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #summary { /* Resume Summary */
-  font-family: 'Arima Madurai', cursive;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #key_skills { /* Resume Key Skills */
-  font-family: 'Arima Madurai', cursive;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: left;
+  padding-left: 0px;
 }
 
 #experience { /* Resume Experience Section */
@@ -313,71 +318,10 @@ ul li { /* List Item Setting */
   text-align: left;
 }
 
-/* Responsive layout for medium size page -
- * will change using min-width for project 3.
- */
-@media (min-width: 541px) and (max-width: 1010px) {
+/* Responsive layout 465px */
+@media screen and (min-width: 29.0625em) {
   .nav-links ul li {
-    position: relative;
-    float: left;
-    right: 50%;
-    text-align: center;
-    font-size: 80%;
-    padding: 0;
-  }
-  h1 {
-    font-size: 250%;
-  }
-  h2 {
-    font-size: 150%;
-  }
-  h3 { /* Heading 3 */
-    font-size: 130%;
-  }
-  h4 { /* Heading 4 */
-    font-size: 110%;
-  }
-  p {
-    font-family: 'Arima Madurai', cursive;
-    font-size: 1.1em;
-    padding-left: 0.625em;
-    padding-right: 1.25em;
-    text-align: justify;
-  }
-  ul li { /* List Item Setting */
-    font-family: 'Arima Madurai', cursive;
-    font-size: 1.1em;
-    padding-left: 10px;
-    text-align: justify;
-    padding-right: 20px;
-  }
-  .img-column { /* 2 column images */
-    float: none;
-    width: 40%;
-    /* padding: 0.25em; */
-    padding-left: 2em;
-    padding-bottom: 1em;
-  }
-  img { /* Image Setting */
-    align-self: center;
-    width: 25em;
-    height: 18em;
-    max-width:25em;
-    max-height: 18em;
-  }
-}
-
-/* Responsive layout for small size page -
- * will change using min-width for project 3.
- */
-@media screen and (max-width: 540px) {
-  .nav-links ul li {
-    position: relative;
-    float: left;
-    right: 50%;
-    text-align: center;
-    font-size: 70%;
-    padding: 0;
+    font-size: 82%;
   }
   h1 {
     font-size: 200%;
@@ -392,23 +336,123 @@ ul li { /* List Item Setting */
     font-size: 105%;
   }
   p {
-    font-family: 'Arima Madurai', cursive;
-    font-size: 1em;
-    padding-left: 0.625em;
-    padding-right: 1.25em;
-    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.15em;
+    text-align: left;
+  }
+  .nav-links {
+    font-size: 140%;
   }
   ul li { /* List Item Setting */
-    font-family: 'Arima Madurai', cursive;
-    font-size: 0.9em;
-    padding-left: 10px;
-    text-align: justify;
-    padding-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.05em;
+    text-align: left;
   }
   .img-column { /* 2 column images */
     float: none;
     width: 40%;
     padding: 0.5em;
+  }
+  img { /* Image Setting */
+    width: 23.125em;
+    height: 15.42em;
+    max-width: 23.125em;
+    max-height: 15.42em;
+  }
+  video { /* Video Setting */
+    align-self: center;
+    width: 23.125em;
+    height: 17.47em;
+    max-width: 23.125em;
+    max-height: 17.47em;
+  }
+  figcaption {
+    font-size: 1.1em;
+  }
+  /* Align left, center, right on a Resume line */
+  .alignleft {
+    padding-left: 0.625em;
+    padding-top: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.875em;
+  }
+  .aligncenter {
+    padding-top: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    font-weight: 600;
+  }
+  .alignright {
+    padding-top: 1.5em;
+    padding-right: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.875em;
+  }​
+  .clearfix {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+    font-weight: 600;
+    padding-top: 0.625em;
+  }
+  .center { /* Center Text */
+    font-size: 120%;
+  }
+  #saigon { /* Saigon portion setting */
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #sapa { /* sapa portion */
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #other { /* Other portion setting */
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #summary { /* Resume Summary */
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #key_skills { /* Resume Key Skills */
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+/* Responsive layout 768px */
+@media screen and (min-width: 48em) {
+  .nav-links ul li {
+    font-size: 90%;
+  }
+  h1 {
+    font-family: 'Atma', cursive;
+    font-size: 250%;
+  }
+  h2 {
+    font-family: 'Oldenburg', cursive;
+    font-size: 150%;
+  }
+  h3 { /* Heading 3 */
+    font-family: 'Oldenburg', cursive;
+    font-size: 130%;
+  }
+  h4 { /* Heading 4 */
+    font-family: 'Oldenburg', cursive;
+    font-size: 110%;
+  }
+  p {
+    font-family: 'Arima Madurai', cursive;
+    font-size: 1.2em;
+    text-align: justify;
+  }
+  .nav-links {
+    font-size: 160%;
+  }
+  ul li { /* List Item Setting */
+    font-family: 'Arima Madurai', cursive;
+    font-size: 1.15em;
+    text-align: justify;
+  }
+  .img-column {
+    float: none;
+    width: 40%;
+    padding-left: 2em;
+    padding-bottom: 1em;
   }
   img { /* Image Setting */
     align-self: center;
@@ -417,11 +461,155 @@ ul li { /* List Item Setting */
     max-width:25em;
     max-height: 18em;
   }
-  video{ /* Video Setting */
+  video {
     align-self: center;
     width: 25em;
-    height: 20em;
+    height: 18em;
     max-width:25em;
-    max-height: 20em;
+    max-height: 18em;
+  }
+  figcaption {
+    max-width: 26em;
+    font-size: 1.1em;
+  }
+  /* Align left, center, right on a Resume line */
+  .alignleft {
+    padding-left: 0.625em;
+    padding-top: 2.0em;
+    font-family: 'Arima Madurai', cursive;
+    font-size: 1em;
+  }
+  .aligncenter {
+    padding-top: 0.5em;
+    font-family: 'Arima Madurai', cursive;
+    font-size: 250%;
+    font-weight: 800;
+  }
+  .alignright {
+    padding-top: 2.0em;
+    padding-right: 1.15em;
+    font-family: 'Arima Madurai', cursive;
+    font-size: 1em;
+  }​
+  /* Take care of overflow outside of container */
+  .clearfix {
+    font-family: 'Arima Madurai', cursive;
+    font-size: 140%;
+    font-weight: 800;
+    padding-top: 0.625em;
+  }
+  #saigon { /* Saigon portion setting */
+    font-family: 'Arima Madurai', cursive;
+  }
+  #sapa { /* sapa portion */
+    font-family: 'Arima Madurai', cursive;
+  }
+  #other { /* Other portion setting */
+    font-family: 'Arima Madurai', cursive;
+  }
+  #summary { /* Resume Summary */
+    font-family: 'Arima Madurai', cursive;
+  }
+  #key_skills { /* Resume Key Skills */
+    font-family: 'Arima Madurai', cursive;
+  }
+}
+
+/* Responsive layout 1010px */
+@media screen and (min-width: 63.125em) {
+  .nav-links ul li {
+    font-size: 100%;
+  }
+  h1 {
+    font-family: 'Atma', cursive;
+    font-size: 300%;
+  }
+  h2 {
+    font-family: 'Oldenburg', cursive;
+    font-size: 200%;
+  }
+  h3 { /* Heading 3 */
+    font-family: 'Oldenburg', cursive;
+    font-size: 140%;
+  }
+  h4 { /* Heading 4 */
+    font-family: 'Oldenburg', cursive;
+    font-size: 120%;
+  }
+  p {
+    font-family: 'Arima Madurai', cursive;
+    font-size: 1.25em;
+    text-align: justify;
+  }
+  .jobtitle { /* Size for Job Title */
+    font-size: 125%;
+  }
+  .nav-links {
+    font-size: 175%;
+  }
+  ul li { /* List Item Setting */
+    font-family: 'Arima Madurai', cursive;
+    font-size: 1.2em;
+  }
+  .img-column { /* for 2 column images */
+    float: left;
+    width: 50%;
+    padding: 0.25em;
+  }
+  img { /* Image Setting */
+    width: 28.125em;
+    height: 18.75em;
+    max-width:28.125em;
+    max-height: 18.75em;
+  }
+  video{ /* Video Setting */
+    width: 28.125em;
+    height: 21.25em;
+    max-width:28.125em;
+    max-height: 21.25em;
+  }
+  figcaption {
+    max-width: 29em;
+    font-size: 1em;
+  }
+  /* Align left, center, right on a Resume line */
+  .alignleft {
+    padding-left: 0.625em;
+    padding-top: 2.5em;
+    font-family: 'Arima Madurai', cursive;
+    font-size: 1em;
+  }
+  .aligncenter {
+    padding-top: 0.5em;
+    font-family: 'Arima Madurai', cursive;
+    font-size: 300%;
+    font-weight: 900;
+  }
+  .alignright {
+    padding-top: 2.5em;
+    padding-right: 1.25em;
+    font-family: 'Arima Madurai', cursive;
+    font-size: 1em;
+  }​
+  .clearfix {
+    font-family: 'Arima Madurai', cursive;
+    font-size: 150%;
+    font-weight: 900;
+    padding-top: 0.625em;
+  }
+  #saigon { /* Saigon portion setting */
+    font-family: 'Arima Madurai', cursive;
+  }
+  #sapa { /* sapa portion */
+    font-family: 'Arima Madurai', cursive;
+  }
+  #other { /* Other portion setting */
+    font-family: 'Arima Madurai', cursive;
+  }
+  #summary { /* Resume Summary */
+    font-family: 'Arima Madurai', cursive;
+  }
+  #key_skills { /* Resume Key Skills */
+    font-family: 'Arima Madurai', cursive;
   }
 }
