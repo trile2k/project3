@@ -114,14 +114,14 @@ p { /* Paragraph Setting */
   float: left;
   right: 50%;
   text-align: center;
-  width: 33%; /* Avoid stacking on smaller pages */
+  width: 25%; /* Avoid stacking on smaller pages */
   font-size: 78%;
 }
 
 .nav-links ul li a {
   color: firebrick;
   padding: 10px 25px;
-  display: block;
+  display: inline-block;
   text-decoration: none;
 }
 
@@ -613,3 +613,26 @@ ul li { /* List Item Setting */
     font-family: 'Arima Madurai', cursive;
   }
 }
+
+/* For Google Map piece */
+#wrapper {
+  width: 900px;
+  height: 700px;
+  background-color: lightgreen;
+  margin:0 auto;
+  overflow: hidden;
+}
+#canvas {
+  width: 800px;
+  height: 600px;
+  margin: 30px auto;
+}
+
+/* #map {
+  height: 100%;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+} */
