@@ -89,5 +89,3 @@ function init() {
   drawingManager.setMap(myMap); // Create the drawing Tool at the top of the Map.
   myMap.setTilt(45);
 }
-
-// google.maps.event.addDomListener(window, 'load', init);
