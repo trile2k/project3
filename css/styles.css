@@ -318,6 +318,20 @@ ul li { /* List Item Setting */
   text-align: left;
 }
 
+/* For Google Map piece */
+#wrapper {
+  width: 320px;
+  height: 610px;
+  background-color: lightgreen;
+  margin:0 auto;
+  overflow: hidden;
+}
+#canvas {
+  width: 305px;
+  height: 590px;
+  margin: 10px auto;
+}
+
 /* Responsive layout 465px */
 @media screen and (min-width: 29.0625em) {
   .nav-links ul li {
@@ -411,6 +425,15 @@ ul li { /* List Item Setting */
   }
   #key_skills { /* Resume Key Skills */
     font-family: Arial, Helvetica, sans-serif;
+  }
+  #wrapper {
+    width: 400px;
+    height: 610px;
+  }
+  #canvas {
+    width: 370px;
+    height: 590px;
+    margin: 10px auto;
   }
 }
 
@@ -513,6 +536,15 @@ ul li { /* List Item Setting */
   #key_skills { /* Resume Key Skills */
     font-family: 'Arima Madurai', cursive;
   }
+  #wrapper {
+    width: 700px;
+    height: 620px;
+  }
+  #canvas {
+    width: 670px;
+    height: 590px;
+    margin: 15px auto;
+  }
 }
 
 /* Responsive layout 1010px */
@@ -612,21 +644,19 @@ ul li { /* List Item Setting */
   #key_skills { /* Resume Key Skills */
     font-family: 'Arima Madurai', cursive;
   }
+  /* For Google Map piece */
+  #wrapper {
+    width: 860px;
+    height: 630px;
+  }
+  #canvas {
+    width: 810px;
+    height: 590px;
+    margin: 20px auto;
+  }
 }
 
-/* For Google Map piece */
-#wrapper {
-  width: 900px;
-  height: 700px;
-  background-color: lightgreen;
-  margin:0 auto;
-  overflow: hidden;
-}
-#canvas {
-  width: 800px;
-  height: 600px;
-  margin: 30px auto;
-}
+
 
 /* #map {
   height: 100%;
