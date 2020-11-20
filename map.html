@@ -12,17 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&family=Atma:wght@500&family=Oldenburg&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=init&libraries=drawing&v=weekly&localContext&v=beta"
+       defer></script>
     <script type="text/javascript" src="js/script.js"></script>
-    <!--
-    <script src="https://maps.googleapis.com/maps/api/js?AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap" async defer></script>
-    -->
   </head>
 
   <body>
-    <!--
-    <div id="map"></div>
-    -->
     <div class="webpage-layout">
       <header class="header">
         <h1>Ho Chi Minh City (Saigon) Map</h1>
@@ -38,9 +33,10 @@
       </header>
       <div id="wrapper">
         <div id="canvas"></div>
+        <div id="legend"></div>
       </div>
       <footer class="footer">
-        Created by Tri Le -
+        <div>Created by Tri Le -</div>
         <address>
           <!-- @ = 64 UTF-8 decimal -->
           <a href="mailto:tle28&#64;hawk.itt.edu?subject=feedback">tle28&#64;hawk.iit.edu</a>
