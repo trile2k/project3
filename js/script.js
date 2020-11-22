@@ -85,6 +85,14 @@ function init() {
     },
   });
 
-  drawingManager.setMap(myMap); // Create the drawing Tool at the top of the Map.
+  drawingManager.setMap(myMap); // Create the Drawing Tool at the top of the Map.
   myMap.setTilt(45);
 }
+
+// Box Slider
+$(document).ready(function(){
+  $('.bxslider').bxSlider({
+    mode: 'vertical',
+    infiniteLoop: true,
+  });
+});
