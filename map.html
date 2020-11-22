@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=init&libraries=drawing&v=weekly&localContext&v=beta"
-       defer></script>
+      async defer></script>
     <script type="text/javascript" src="js/script.js"></script>
   </head>
 
@@ -31,10 +31,14 @@
           </ul>
         </nav>
       </header>
-      <div id="wrapper">
-        <div id="canvas"></div>
-        <div id="legend"></div>
+      <div id="intro">
+        <p>Please use the tool bar on the top center of the map to put markers, draw circles, rectangles, polygons,
+          and polylines on the map. You can also hover over the gold star to see a brief description.</p>
       </div>
+      <div id="map-wrapper">
+        <div id="map-canvas"></div>
+      </div>
+      <div id="map-end"></div>
       <footer class="footer">
         <div>Created by Tri Le -</div>
         <address>

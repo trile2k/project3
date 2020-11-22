@@ -8,7 +8,7 @@
 function init() {
 	// alert('it works');
   // Set up the Map with various options.
-	var canvas_element = document.getElementById('canvas');
+	var canvas_element = document.getElementById('map-canvas');
   var myLocation = new google.maps.LatLng(10.779790, 106.699012); // Ho Chi Minh City
 	var mapOptions = {
 		center: myLocation,
@@ -16,9 +16,9 @@ function init() {
 		mapTypeId: 'hybrid',
     mapTypeControl: true,
 		mapTypeControlOptions: {
-			position: google.maps.ControlPosition.BOTTOM_CENTER,
+			position: google.maps.ControlPosition.LEFT_TOP,
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
-      mapTypeIds: ["roadmap", "terrain"],
+      mapTypeIds: ['roadmap', 'terrain', 'hybrid', 'satellite']
 		},
 	};
 
@@ -60,7 +60,6 @@ function init() {
 
   // Enable Drawing Tool at the top of the Map.
   const drawingManager = new google.maps.drawing.DrawingManager({
-    drawingMode: google.maps.drawing.OverlayType.MARKER,
     drawingControl: true,
     drawingControlOptions: {
       position: google.maps.ControlPosition.TOP_CENTER,

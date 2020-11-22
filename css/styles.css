@@ -277,8 +277,8 @@ ul li { /* List Item Setting */
   padding-top: 0.625em;
 }
 
-#intro { /* Homepage Intro */
-  padding-top: 3.125em;
+#intro { /* Intro */
+  padding-top: 2em;
   text-align: center;
 }
 
@@ -319,7 +319,7 @@ ul li { /* List Item Setting */
 }
 
 /* For Google Map piece */
-#wrapper {
+#map-wrapper {
   width: 320px;
   height: 610px;
   background-color: lightgreen;
@@ -327,7 +327,7 @@ ul li { /* List Item Setting */
   overflow: hidden;
 }
 
-#canvas {
+#map-canvas {
   width: 305px;
   height: 590px;
   margin: 10px auto;
@@ -348,6 +348,10 @@ ul li { /* List Item Setting */
   padding-right: 0.2em;
   padding-top: 0;
   text-align: left;
+}
+
+#map-end {
+  padding-top: 1.75em;
 }
 
 /* Responsive layout 465px */
@@ -429,6 +433,9 @@ ul li { /* List Item Setting */
   .center { /* Center Text */
     font-size: 120%;
   }
+  #intro { /* Intro */
+    padding-top: 2.75em;
+  }
   #saigon { /* Saigon portion setting */
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -444,11 +451,11 @@ ul li { /* List Item Setting */
   #key_skills { /* Resume Key Skills */
     font-family: Arial, Helvetica, sans-serif;
   }
-  #wrapper {
+  #map-wrapper {
     width: 400px;
     height: 610px;
   }
-  #canvas {
+  #map-canvas {
     width: 370px;
     height: 590px;
     margin: 10px auto;
@@ -539,6 +546,9 @@ ul li { /* List Item Setting */
     font-weight: 800;
     padding-top: 0.625em;
   }
+  #intro { /* Intro */
+    padding-top: 3em;
+  }
   #saigon { /* Saigon portion setting */
     font-family: 'Arima Madurai', cursive;
   }
@@ -554,11 +564,11 @@ ul li { /* List Item Setting */
   #key_skills { /* Resume Key Skills */
     font-family: 'Arima Madurai', cursive;
   }
-  #wrapper {
+  #map-wrapper {
     width: 700px;
     height: 620px;
   }
-  #canvas {
+  #map-canvas {
     width: 670px;
     height: 590px;
     margin: 15px auto;
@@ -647,6 +657,9 @@ ul li { /* List Item Setting */
     font-weight: 900;
     padding-top: 0.625em;
   }
+  #intro { /* Intro */
+    padding-top: 3.5em;
+  }
   #saigon { /* Saigon portion setting */
     font-family: 'Arima Madurai', cursive;
   }
@@ -663,24 +676,13 @@ ul li { /* List Item Setting */
     font-family: 'Arima Madurai', cursive;
   }
   /* For Google Map piece */
-  #wrapper {
+  #map-wrapper {
     width: 860px;
     height: 630px;
   }
-  #canvas {
+  #map-canvas {
     width: 810px;
     height: 590px;
     margin: 20px auto;
   }
 }
-
-
-
-/* #map {
-  height: 100%;
-}
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-} */
