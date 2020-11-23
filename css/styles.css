@@ -905,7 +905,7 @@ ul li { /* List Item Setting */
   #key_skills { /* Resume Key Skills */
     font-family: 'Arima Madurai', cursive;
   }
-  /* For Google Map piece */
+  /* Wrapper and Canvas for the map */
   #map-wrapper {
     width: 860px;
     height: 630px;
