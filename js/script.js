@@ -6,21 +6,21 @@
 
 // Map Initialization.
 function init() {
-	// alert('it works');
+  // alert('it works');
   // Set up the Map with various options.
-	var canvas_element = document.getElementById('map-canvas');
+  var canvas_element = document.getElementById('map-canvas');
   var myLocation = new google.maps.LatLng(10.779790, 106.699012); // Ho Chi Minh City
-	var mapOptions = {
-		center: myLocation,
-		zoom: 13,
-		mapTypeId: 'hybrid',
+  var mapOptions = {
+    center: myLocation,
+    zoom: 13,
+    mapTypeId: 'hybrid',
     mapTypeControl: true,
-		mapTypeControlOptions: {
-			position: google.maps.ControlPosition.LEFT_TOP,
+    mapTypeControlOptions: {
+      position: google.maps.ControlPosition.LEFT_TOP,
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
       mapTypeIds: ['roadmap', 'terrain', 'hybrid', 'satellite']
-		},
-	};
+    },
+  };
 
   // Form a goldstar for the map
   const goldStar = {
@@ -37,26 +37,31 @@ function init() {
   var myMap = new google.maps.Map(canvas_element, mapOptions);
 
   // Create the marker on the map
-	var marker = new google.maps.Marker({
-		position: myLocation,
+  var marker = new google.maps.Marker({
+    position: myLocation,
     title: "Ho Chi Minh City (Saigon)",
     icon: goldStar, // Use the Goldstar created earlier
-		map: myMap,
-	});
+    map: myMap,
+  });
 
   // Create a string to write info message to the map window
-	var contentString = '<h1 id="h1map">Ho Chi Minh City</h1><p id="pmap">It is the largest city situated in \
+  var contentString = '<h1 id="h1map">Ho Chi Minh City</h1><p id="pmap">It is the largest city situated in \
     the South of Vietnam and is also known as Saigon.</p>';
 
-	var infowindow = new google.maps.InfoWindow({
-      content: contentString,
-      maxWidth: 200, // Limit the message size so it's not too big.
-	});
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString,
+    maxWidth: 200, // Limit the message size so it's not too big.
+  });
 
   // Write an info messgae when mouse over on the marker.
-	google.maps.event.addListener(marker, 'mouseover', function() {
-    	infowindow.open(myMap, marker);
-	});
+  google.maps.event.addListener(marker, 'mouseover', function() {
+  	infowindow.open(myMap, marker);
+  });
+
+  // Remove the info messgae when mouse out of the marker.
+  google.maps.event.addListener(marker, 'mouseout', function() {
+    infowindow.close();
+  });
 
   // Enable Drawing Tool (marker, circle, etc.) at the top of the Map.
   const drawingManager = new google.maps.drawing.DrawingManager({
