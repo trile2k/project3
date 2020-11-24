@@ -53,12 +53,12 @@ function init() {
     maxWidth: 200, // Limit the message size so it's not too big.
   });
 
-  // Write an info messgae when mouse over on the marker.
+  // Write an info message when mouse over on the marker.
   google.maps.event.addListener(marker, 'mouseover', function() {
-  	infowindow.open(myMap, marker);
+    infowindow.open(myMap, marker);
   });
 
-  // Remove the info messgae when mouse out of the marker.
+  // Remove the info message when mouse out of the marker.
   google.maps.event.addListener(marker, 'mouseout', function() {
     infowindow.close();
   });
@@ -102,5 +102,8 @@ $(document).ready(function(){
     stopAutoOnClick: true,
     pager: true,
     controls: true,
+    captions: false,
+    touchEnabled: true,
+    infiniteLoop: true,
   });
 });
